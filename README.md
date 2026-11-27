@@ -77,3 +77,28 @@ clientes_rfm = [
         "frecuencia_compras": 1
     }
 ]
+
+✅ **RESULTADO**
+
+***Clasificación de clientes***
+
+| Cliente | Segmento | Gasto ($) | Días sin comprar |
+| :--- | :---: | ---: | ---: |
+| Ana Silva | VIP | $2,400.00 | 5 |
+| Luis Gomez | Leal | $950.00 | 20 |
+| Carla Ruiz | En riesgo | $1,850.00 | 110 |
+| Pedro Diaz | Inactivo | $45.00 | 240 |
+| Elena Mora | Nuevo | $180.00 | 12 |
+| Jorge Pino | En riesgo | $1,100.00 | 95 |
+| Sofia Lara | VIP | $3,200.00 | 3 |
+| Mario Soto | Inactivo | $60.00 | 300 |
+
+***Resumen de cartera*** 
+
+| Segmento | Clientes | Aporte total |
+| :--- | :---: | ---: |
+| VIP | 2 | $5,600.00 |
+| Leal | 1 | $950.00 |
+| En riesgo | 2 | $2,950.00 |
+| Inactivo | 2 | $105.00 |
+| Nuevo | 1 | $180.00 |
