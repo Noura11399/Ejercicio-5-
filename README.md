@@ -18,6 +18,7 @@ Evaluar para cada cliente tres variables:
   - Resumir la cartera: Contar cuántos clientes cayeron en cada segmento y calcular cuánto dinero aporta cada grupo al negocio.
 
 **DATASET SIMULADO (PYTHON PURO)**
+
 clientes_rfm = [
     {
         "cliente_id": "CL01",
