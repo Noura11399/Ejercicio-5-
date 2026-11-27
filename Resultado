@@ -1,0 +1,41 @@
+# Inicializamos los diccionarios para el resumen de la cartera
+resumen_cartera = {}
+valor_segmentos = {}
+
+# Clasificación de clientes:
+print("-------------------------- CLASIFICACIÓN DE CLIENTES ------------------------")
+for cliente in clientes_rfm:
+    recencia = cliente["dias_ultima_compra"]
+    frecuencia = cliente["frecuencia_compras"]
+    gasto = cliente["gasto_total"]
+
+    # Print para verificar que el código es correcto:  print(f' {recencia} | {frecuencia} | {gasto}')
+
+    # Introducimos condiciones para ordenar los datos según los segmentos a los pertenecerá cada cliente:
+    if recencia <= 30 and frecuencia >= 12 and gasto > 2000:
+        segmento = "VIP"
+    elif recencia <= 60 and frecuencia >= 5:
+        segmento = "Leal"
+    elif recencia <= 30 and frecuencia < 3:
+        segmento = "Nuevo"
+    elif recencia > 90 and frecuencia >= 3:
+        segmento = "En riesgo"
+    else:
+        segmento = "Inactivo"
+
+    # IMPORTANTE: Guardamos el segmento calculado dentro del diccionario del cliente
+    cliente["segmento"] = segmento
+
+    print(f'{cliente["nombre"]} --> Segmento:{segmento} | Gasto $:{gasto:.2f} | Días sin comprar:{recencia}')
+
+# Ahora resumimos y clasificamos los datos simplificados en un diccionario aparte.
+for resumen in clientes_rfm:
+    seg = resumen["segmento"]
+    gasto = resumen["gasto_total"]
+
+    # Sumamos y acumulamos de forma indentada dentro del bucle for
+    resumen_cartera[seg] = resumen_cartera.get(seg, 0) + 1
+    valor_segmentos[seg] = valor_segmentos.get(seg, 0.0) + gasto
+print("----------------------------- RESUMEN CARTERA ------------------------------")
+for seg in resumen_cartera:
+    print(f"Segmento: {seg} | Clientes: {resumen_cartera[seg]} | Aporte Total: ${valor_segmentos[seg]:.2f}")
