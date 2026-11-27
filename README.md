@@ -79,6 +79,7 @@ clientes_rfm = [
 
 **Resultado**
 -------------------------- CLASIFICACIÓN DE CLIENTES ------------------------
+
 Ana Silva --> Segmento:VIP | Gasto $:2400.00 | Días sin comprar:5
 Luis Gomez --> Segmento:Leal | Gasto $:950.00 | Días sin comprar:20
 Carla Ruiz --> Segmento:En riesgo | Gasto $:1850.00 | Días sin comprar:110
@@ -87,6 +88,7 @@ Elena Mora --> Segmento:Nuevo | Gasto $:180.00 | Días sin comprar:12
 Jorge Pino --> Segmento:En riesgo | Gasto $:1100.00 | Días sin comprar:95
 Sofia Lara --> Segmento:VIP | Gasto $:3200.00 | Días sin comprar:3
 Mario Soto --> Segmento:Inactivo | Gasto $:60.00 | Días sin comprar:300
+
 ----------------------------- RESUMEN CARTERA ------------------------------
 Segmento: VIP | Clientes: 2 | Aporte Total: $5600.00
 Segmento: Leal | Clientes: 1 | Aporte Total: $950.00
